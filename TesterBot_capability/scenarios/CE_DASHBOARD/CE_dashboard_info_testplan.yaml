@@ -1,4 +1,4 @@
-description: Returns test plan of a test type,test plan,testplan , plans,plan, frequency,poc,timeline, system, landscape  from the CE dashboard
+description: Returns himanhu testplan of a test type,test plan,testplan , plans,plan, frequency,poc,timeline, system, landscape  from the CE dashboard
 
 slots:
   - name: userinput
