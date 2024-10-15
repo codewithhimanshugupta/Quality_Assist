@@ -1,0 +1,12 @@
+description: Returns answers related to query on QATL checks, ER1 QS9 ZWR OC7 system, AIQ (Main Release/CFD), ATC test systems in the main release Z9L and Z9R, main test automation system for the maintenance codeline OC7 or HC7, Infinity landscape
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

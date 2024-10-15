@@ -1,0 +1,53 @@
+parameters:
+  - name: userinput
+action_groups:
+  - actions:
+      - type: api-request
+        method: POST
+        system_alias: TESTER_BOT_RAG_Service
+        path: "/fetch_response_ce_dashboard/"
+        headers:
+          Content-Type: application/json
+        body: |
+          {
+            "query": "<? userinput ?>"
+          }
+        result_variable: ce_dashboard_result
+  - condition: ce_dashboard_result!=null && ce_dashboard_result.status_code == 200 && ce_dashboard_result.body != null
+    actions:
+        - type: set-variables
+          scripting_type: spel
+          variables:
+            - name: llm_response
+              value: <? ce_dashboard_result.body.llm_response ?>
+            - name: source_link
+              value: <? ce_dashboard_result.body.source ?>
+
+        - type: message
+          message:
+            type: text
+            content: <? llm_response ?>
+
+        - type: message
+          scripting_type: handlebars
+          message: >
+            {
+              "type": "list",
+              "content": {
+                "title": "Source",
+                "enableDetailView": false,
+                "displayInPanel": true,
+                "panel": {
+                  "collapsed": true
+                },
+                "elements": [
+                  {
+                    "title": {
+                      "value": "[Source Link]({{source_link}})",
+                      "markdown": true
+                    },
+                    "description": "The details of the source link provided."
+                  }
+                ]
+              }
+            }

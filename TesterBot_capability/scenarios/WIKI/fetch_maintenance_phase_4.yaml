@@ -1,0 +1,13 @@
+description: Returns answers related to query on CE2302 HotFix Landscape - Client Copy Sequence, CE2302 - 3SL VLAB Deploy Test system provisioning status, CE2302 GTC HotFix Landscape - Client Copy Sequence, CE2208 O** Landscape - Maintenance Test, CE2208 - 3SL Maintenance Test Landscape, CE2208 - CBC Maintenance Test Landscape, CE2208 Content Lifecycle Settings
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

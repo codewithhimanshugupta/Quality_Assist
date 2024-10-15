@@ -1,0 +1,13 @@
+description: Returns answers related to query on Content Lifecycle Settings- delete, Delete CBC Maintenance Test Landscape, H** Landscape - Maintenance Test - delete, HotFix Landscape - Client Copy Sequence - delete, Integration Scenarios - delete, Glossary & FAQs, Quality Glossary, Quality FAQs, Quality Engineering - Internal, Internal How-To Info  CFD , Internal Information- Bridge Tile Definitions
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

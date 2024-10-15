@@ -1,0 +1,13 @@
+description: Returns answers related to query on CE2105 O** Landscape - Maintenance Test, CBC - CE2105 O** Landscape - Maintenance Test, CE2105 - CBC Maintenance Test Landscape, CE2105 Content Lifecycle Settings, CE2105 HotFix Landscape - Client Copy Sequence, CE2105 Integration Scenarios, Cloud Reporting, Inbound Qualification in Maintenance Landscape, UI5 Monthly deliveries, Process Template - HDB IQ in S/4HANA Cloud HF landscape
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

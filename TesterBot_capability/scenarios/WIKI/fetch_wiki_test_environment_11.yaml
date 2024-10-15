@@ -1,0 +1,12 @@
+description: Returns answers related to query on Infinity test environment (Public Cloud), data validation, integrity checks, automated validation, data accuracy standards, Golden Template CE2408, Ledger 2L – IFRS, performance tests, HANA Cloud Performance, accessibility tests, Fiori security scans, localization content SAT, test automation, extensibility FIT test, S4HANA Cloud TQMs, Delta content activation, device browser tests, JVA automated tests
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+- description: Response from wiki
+  value: response

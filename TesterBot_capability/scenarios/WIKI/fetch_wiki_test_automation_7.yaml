@@ -1,0 +1,14 @@
+description: Returns answers related to query current test Automation status for H6R,HBR,OC7 & HC7. Various topics are- ABAP Units AT & ATC runs, Information updates, Dumps,BDEF ATC Run,TA KPIs,DATA Scheduling,General Observations ,General Observations for START
+ 
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+ 
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+ 
+response_context:
+  - description: Response from wiki
+    value: response
+ 

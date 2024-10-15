@@ -1,0 +1,13 @@
+description: Returns answers related to query on CE2111 - CBC Maintenance Test Landscape, CE2111 Content Lifecycle Settings, CE2111 HotFix Landscape - Client Copy Sequence, CE2111 Integration Scenarios, CE2108 H** Landscape - Maintenance Test, CBC - CE2108 H** Landscape - Maintenance Test, CE2108 - 3SL Maintenance Test Landscape, CE2108 Content Lifecycle Settings, CE2108 HotFix Landscape - Client Copy Sequence, CE2108 Integration Scenarios,  CE2208 3SL VLAB Deploy Test system provisioning status
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

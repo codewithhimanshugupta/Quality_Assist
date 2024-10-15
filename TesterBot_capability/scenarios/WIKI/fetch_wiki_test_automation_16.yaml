@@ -1,0 +1,12 @@
+description: Returns answers related to query on Legacy Code Handling, Legacy ABAP code, UI and business logic mix, CE2502 legacy check, OSQL mocking, Coverage exemptions via SCLAS, Test isolation challenges
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+ 
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+ 
+response_context:
+  - description: Response from wiki
+    value: response

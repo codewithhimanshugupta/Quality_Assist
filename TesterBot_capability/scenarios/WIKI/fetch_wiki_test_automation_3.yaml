@@ -1,0 +1,13 @@
+description: Returns answers related to query on High level strategy,Assumptions for the Test Automation Strategy,Goals & Consequences,Operational Consequences,Test Case Design for Test Automates,Users & Authorizations,Cloud Development Principles,Link to Test Automation Concept for AI,Contacts
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

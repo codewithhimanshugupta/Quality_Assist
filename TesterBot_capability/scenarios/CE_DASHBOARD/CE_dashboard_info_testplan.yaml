@@ -1,0 +1,15 @@
+description: Returns test plan of a test type,test plan,testplan , plans,plan, frequency,poc,timeline, system, landscape  from the CE dashboard
+
+slots:
+  - name: userinput
+    description: Entire user query
+    
+target:
+  type: function
+  name: CE_DASHBOARD/fetch_CE_dashboard_info
+ 
+#response_context:
+  #- value: response
+   # description: Response for the query from LLM
+  #- value: error_message
+   # description: Error message for no response from the LLM

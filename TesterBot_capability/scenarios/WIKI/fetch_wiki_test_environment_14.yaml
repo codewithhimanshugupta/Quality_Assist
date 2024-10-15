@@ -1,0 +1,12 @@
+description: Returns answers related to query on 2408 Counter of System/Clients, Business XOR Scenarios, Early Test Clients, SSCUI, GTC Setup, Infinity Landscape, Main Test Clients, Content predevelopment, Pre-Integration Qualification, Integration Qualification, Delivery Test Environment, CFD Test Environment, Maintenance Test Environment, Automation Test Clients, Performance System, CBC/SIMG tests, Extensibility System, Test Automation, Security, Embedded Steampunk tests
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+- description: Response from wiki
+  value: response

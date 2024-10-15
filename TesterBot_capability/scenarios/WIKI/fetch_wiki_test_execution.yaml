@@ -1,0 +1,13 @@
+description: Returns answers related to query on Test Execution, GTP and Test Management Guidelines, Test Plan Related Incident Handling, Incident Creation from ServiceNow
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_execution
+
+response_context:
+  - description: Response from wiki
+    value: response

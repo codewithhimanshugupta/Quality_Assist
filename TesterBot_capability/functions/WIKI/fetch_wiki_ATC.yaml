@@ -1,0 +1,57 @@
+parameters:
+  - name: userinput
+
+action_groups:
+  - actions:
+      - type: api-request
+        method: POST
+        system_alias: TESTER_BOT_RAG_Service
+        path: "/fetch_response/"
+        headers:
+          Content-Type: application/json
+        body: |
+             {
+              "query": "<? userinput ?>"
+             }
+        result_variable: rag_result
+
+  - condition: rag_result != null && rag_result.status_code == 200 && rag_result.body != null
+    actions:
+      - type: set-variables
+        scripting_type: spel
+        variables:
+          - name: llm_response
+            value: <? rag_result.body.llm_response ?>
+          - name: source_links
+            value: <? rag_result.body.sources ?>
+
+      - type: message
+        message:
+          type: text
+          content: <? llm_response ?>
+
+      - type: message
+        scripting_type: handlebars
+        message: >
+          {
+            "type": "list",
+            "content": {
+              "title": "Sources",
+              "enableDetailView": false,
+              "displayInPanel": true,
+              "panel": {
+                "collapsed": true
+              },
+              "elements": [
+                {{#each source_links}}
+                  {
+                    "title": {
+                      "value": "[{{this.title}}]({{this.source}})",
+                      "markdown": true
+                    },
+                    "description": "Source: {{this.title}}"
+                  }{{#unless @last}},{{/unless}}
+                {{/each}}
+              ]
+            }
+          }

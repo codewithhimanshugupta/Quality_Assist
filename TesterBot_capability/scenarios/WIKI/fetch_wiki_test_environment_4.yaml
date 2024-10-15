@@ -1,0 +1,12 @@
+description: Returns answers related to query on Infinity Test Environment,Automated Integration Qualification (AIQ),Manual Integration Qualification (MIQ),Customizing Transports,Golden Template Client (GTC),Test Data Engineering (TDE),R8K assembled content,Delta Activation (DCA),SolB,CBC connected clients,Content Development system R8K,Mitigation approach
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+  - description: Response from wiki
+    value: response

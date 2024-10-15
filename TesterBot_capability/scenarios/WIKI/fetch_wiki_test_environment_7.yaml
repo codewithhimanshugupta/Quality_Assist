@@ -1,0 +1,13 @@
+description:  Provides guidance on the CFD landscape enhancement process, including general guidelines, system and client request templates, integration scenario requests, and landscape request procedures. It outlines the golden template clients, content upgrades for CE2408, pre-integration IQ test system landscapes, and details on the golden code line test system landscape for various clients. The function also includes information on the roles and responsibilities of stakeholders in the upgrade process.
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

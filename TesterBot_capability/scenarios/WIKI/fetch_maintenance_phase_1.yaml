@@ -1,0 +1,13 @@
+description: Returns answers related to query on Maintenance Phase, CE2402 H** Landscape - Maintenance Test, CE2402 - 3SL Maintenance Test Landscape, CE2402 - CBC Maintenance Test Landscape, CE2402 Content Lifecycle Settings, CE2402 Final Verification Test - System Provisioning Plan, CE2402 HotFix Landscape - Client Copy Sequence, CE2402 Integration Scenarios, Hana Cloud CE2402 H** Landscape, CE2408 O** Landscape - Maintenance Test
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

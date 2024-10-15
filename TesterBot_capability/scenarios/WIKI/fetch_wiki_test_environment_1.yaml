@@ -1,0 +1,13 @@
+description: Returns answers related to query on Test Environment, Landscape Overview, Test Systems & Clients Overview, Infinity Test Environment, Pre-Integration Qualification Test Environment, Integration Qualification Test Environment, Delivery Test Environment
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+  - description: Response from wiki
+    value: response

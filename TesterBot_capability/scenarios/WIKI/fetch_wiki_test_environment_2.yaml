@@ -1,0 +1,12 @@
+description: Returns answers related to query on  CFD Test Environment, Golden Template Client (GTC) Handling, 2502 GTC FlexOrg Planning, Test Data Management, SComp, Usage of Test Data in Tests and Test Automates, TDE-Test Data Engineering
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+  - description: Response from wiki
+    value: response

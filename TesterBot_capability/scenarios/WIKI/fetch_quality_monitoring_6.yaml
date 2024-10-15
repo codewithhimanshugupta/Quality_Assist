@@ -1,0 +1,12 @@
+description: Returns answers related to query on QAPS Frequently Asked Questions, QAPS - Overview & Process Documentation, Clean Transports - ABAP Unit Tests, Pre-Test System - Inbound Integration (SAP_COM_1059) - Configuration Guide for System Administrators, Clean Transports - Processes, Clean Transports - 'Inventing New Checks' or 'Adaption of Existing Checks', Clean Transports - Contacts, Clean Transports - Historical Data Repository, QATL - Check-Scope History
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

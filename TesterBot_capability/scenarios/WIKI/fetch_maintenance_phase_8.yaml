@@ -1,0 +1,13 @@
+description: Returns answers related to query on MessageHandling, Test Gap Analysis - Test Automation for Hotfixes, Test Client Preparation, Test Readiness, S4 Cloud - Login Users, VP and EP Retest System information, INTERNAL HFG-Q / HFG-C ALIGNMENT, UI Smoke Test, EP Smoke test results, DeleteLandscape - Maintenance Test - Under Maintenance , CE2208 HotFix Landscape - Client Copy Sequence , CE2208 Final Verification Test - System Provisioning Plan
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

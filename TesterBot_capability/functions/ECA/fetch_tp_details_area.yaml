@@ -1,0 +1,31 @@
+parameters:
+  - name: area
+action_groups:
+  - actions:
+      - type: api-request
+        method: POST
+        system_alias: TESTER_BOT_RAG_Service
+        path: "/fetch_response_area/"
+        headers:
+          Content-Type: application/json
+        body: |
+             {
+              "query": "<? area ?>"
+             }
+        result_variable: test_plan_details_area
+  - condition: test_plan_details_area == null || test_plan_details_area.status_code != 200
+    actions:
+      - type: set-variables
+        variables:
+          - name: error_message
+            value: An error occured when fetching details
+  - condition: test_plan_details_area != null && test_plan_details_area.body.details.size() == 0
+    actions:
+      - type: set-variables
+        variables:
+          - name: error_message
+            value: No test plans found
+result:
+  success: <? test_plan_details_area.status_code == 200 ?>
+  response: <? test_plan_details_area.body.details[0] ?>
+  error_message: "<? error_message ?>"

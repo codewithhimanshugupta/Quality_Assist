@@ -1,0 +1,13 @@
+description: Returns answers related to query on CE2308 Content Lifecycle Settings, CE2308 Final Verification Test - System Provisioning Plan, CE2308 HotFix Landscape - Client Copy Sequence, CE2308 GTC HotFix Landscape - Client Copy Sequence, CE2308 - Hana Cloud Landscape - Work In Progress, CE2302 H** Landscape - Maintenance Test, CE2302 - 3SL Maintenance Test Landscape, CE2302 - CBC Maintenance Test Landscape, CE2302 Content Lifecycle Settings, CE2302 Final Verification Test - System Provisioning Plan
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_maintenance_phase
+
+response_context:
+  - description: Response from wiki
+    value: response

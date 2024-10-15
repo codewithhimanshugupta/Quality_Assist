@@ -1,0 +1,12 @@
+description: Returns all the test plans for the provided area
+slots:
+  - name: area
+    description: Name of the area
+
+target:
+  type: function
+  name: ECA/fetch_tp_details_area
+
+response_context:
+  - description: Test plans for the area 
+    value: response

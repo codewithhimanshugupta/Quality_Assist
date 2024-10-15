@@ -1,0 +1,13 @@
+description: Returns answers related to query on Package Existence Check, Clean Transports - Self-Exemption-Tool for Custom Checks, Increment Context Check, Empty Transport-Request Check, TABU Wildcard Check - CNFCNT, CDS-Query UT Existence Check - CDS_ANALYTICCQRY, Missing Test-TR-Objects Check, QATL - Tool Overview (Features & Functions), QATL - User Interface Operating Instruction
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

@@ -1,0 +1,13 @@
+description: Returns answers related to query on QATL - ATC Integration, QATL - ABAP Unit Test Integration, QATL - Calculation of average code coverage value at transport level, Code Pal checks in QATL - Details, QATL - Usage Data Logging, QATL - Exclude DL, QATL - Chatbot (VIQTOR), QATL - Object Creation Date Detection Logic, QAPS - Tool Overview (Features & Functions)
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

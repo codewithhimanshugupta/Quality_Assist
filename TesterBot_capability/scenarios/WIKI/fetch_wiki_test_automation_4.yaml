@@ -1,0 +1,13 @@
+description: Returns answers related to query on Year 2024 Goals, Test Automation KPIs, Public Cloud, Test Automation Pyramid, Coverage Thresholds, New Objects vs. Existing Objects, App Coverage, OData Coverage, RAP BO Coverage, SOAP Testing, CDS Coverage, Fiori Frontend, Legacy Fiori, ABAP Branch Coverage, Public API Coverage, ABAP Unit Issues, BO RAP Errors, XPRA Data Conversion, Test Gap Completion Rate, Clean Desk Principle, Winning Plan Goal, TA KPIs 2023 vs 2024, COO Requirements, KPI Calculation
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

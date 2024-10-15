@@ -1,0 +1,13 @@
+description: Returns answers related to query on QATL - Custom Checks Check Scope (PuC), QATL - Clean Code Checks (aka Code Pal) (PuC), QATL - Check Scope Private Cloud (Overview), QATL - ATC Check Scope (PrC), QATL - Out of QATL Check Scope, QATL - Exemption Handling, Clean Transports - AIS Handling, QAPS - Quality Assurance @ Pre-test System, QAPS - Check Scope (Public Cloud)
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

@@ -1,0 +1,12 @@
+description: Returns answers related to query on Quality Monitoring, Clean Desk KPIs, Program/Delivery related Bridge Views, Traceability in S/4HANA, Clean Transports, QATL - Quality Assurance @ Transport Level, QATL - Check Scope Public Cloud (Overview), QATL - ATC Check Scope (PuC), QATL - UT Check Scope (PuC)
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

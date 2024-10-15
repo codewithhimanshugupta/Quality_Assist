@@ -1,0 +1,12 @@
+schema_version: 3.4.0
+
+metadata:
+  namespace: namespace
+  name: TesterBot_capability
+  version: 1.0.0
+  display_name: TesterBot_capability
+  description: TesterBot
+
+system_aliases:
+  TESTER_BOT_RAG_Service:
+    destination: TESTER_BOT_RAG

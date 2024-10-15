@@ -1,0 +1,13 @@
+description: Returns answers related to query on Integration Qualification Test Environment (Public Cloud), Infinity Test Environment, Delivery Test Environment, Functional Correctness, Solution Builder Systems, Toggle OFF Tests, SSCUI Fine Tuning, Developer Extensibility, Multiclient Systems, Ledger 2L IFRS, USGAAP, Golden Template CE2408, Assembled Content, Banking, JVA, PSM, D2P Tests, TR done, Full BP Scope, SSCUI Fine Tuning Q-Client, X19/007-J3D, 2502.0.500, Content Activation, DE + US Solution, Retail
+
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+- description: Response from wiki
+  value: response

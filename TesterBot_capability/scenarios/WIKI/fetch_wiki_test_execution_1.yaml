@@ -1,0 +1,13 @@
+description: Returns answers related to query on GTP and Test Management Guidelines, New Feature Test (NFT), CILTS traceability, S/4HANA PUC2502, Hot-fix Collection Regression, HANA Cloud EA Test, Data Conversion Methods, S/4HANA CE 2402.x, Manual Integration Qualification - Toggle OFF, Automated Integration Qualification - Toggle ON, Team Regression Test in GCL, GTP Test Case Status
+
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_execution
+
+response_context:
+- description: Response from wiki
+  value: response

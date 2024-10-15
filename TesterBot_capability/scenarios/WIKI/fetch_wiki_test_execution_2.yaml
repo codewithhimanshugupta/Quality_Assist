@@ -1,0 +1,13 @@
+description: Returns answers related to query on Test Plan Related Incident Handling, BCP to ServiceNow, Test Status in GTP, GTP test case status, HCSM Configurable Workspace,Incident creation, Validating incidents, Closing incidents
+
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_execution
+
+response_context:
+- description: Response from wiki
+  value: response

@@ -1,0 +1,19 @@
+parameters:
+  - name: userinput
+
+action_groups:
+  - actions:
+      - type: api-request
+        method: POST
+        system_alias: TESTER_BOT_RAG_Service
+        path: "/fetch_response/"
+        headers:
+          Content-Type: application/json
+        body: |
+             {
+              "query": "<? userinput ?>"
+             }
+        result_variable: rag_result
+result:
+  success: <? rag_result.status_code == 200 ?>
+  response: <? rag_result.body.llm_response ?>

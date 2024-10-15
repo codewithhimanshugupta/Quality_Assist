@@ -1,0 +1,12 @@
+description:  Provides information on the GCT system's test automation reporting, including ABAP unit run status, test coverage availability, recent KPIs, incident tracking, and best practices for managing automation failures. It also offers guidance on creating bug reports and troubleshooting common issues in the test automation process to enhance efficiency and effectiveness.
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

@@ -1,0 +1,13 @@
+description: Returns answers related to query on QAPS - Out of QAPS Check Scope, QAPS - Exemption Handling, QAHS - Quality Assurance @ Hotfix System, QAHS - Check Scope, Clean Transports - Active Installation System Overview, QATL - activation beyond S/4HANA, QATL in Marketing (ABD), Clean Transports - Features & Functions (Technical Tool Overview), Clean Transports - Custom Checks
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

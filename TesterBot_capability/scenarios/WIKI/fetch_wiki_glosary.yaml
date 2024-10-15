@@ -1,0 +1,13 @@
+description: Returns answers related to query on Glossary & FAQs (Public Cloud), Quality Glossary (Public Cloud), Quality FAQs (Public Cloud), Quality Engineering - Internal (Public Cloud), Internal How-To Info - CFD, Internal Information Bridge Tile Definitions (Public Cloud)
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_glossary
+
+response_context:
+  - description: Response from wiki
+    value: response

@@ -1,0 +1,13 @@
+description:  Provides comprehensive guidance on the testing environment landscape for the S4HANA Cloud, covering general information, test systems, automation processes, and testing methodologies. It details various testing categories, including functional correctness, extensibility, inbound qualification, toggle tests, and business process tests, alongside the roles and responsibilities of stakeholders involved in these processes.
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

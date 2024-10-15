@@ -1,0 +1,12 @@
+description: Returns answers related to query on Test Automation contacts, Test gap closure, ACRF Admin, System I7P, Test gap closure, Mailing list contact to Sara Kuhn
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+ 
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+ 
+response_context:
+  - description: Response from wiki
+    value: response

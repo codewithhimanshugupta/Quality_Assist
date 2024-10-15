@@ -1,0 +1,12 @@
+description: Returns answers related to query on 2502 GTC FlexOrg Planning, Teams handover, Activations running, Quan Zhenhai Sun Leona, Early CST time, IST to CET conversion, Testing late in the evening, Anil shifts, Mohit/Kesava schedule, Activation team, Rolf/Martin testing
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+- description: Response from wiki
+  value: response

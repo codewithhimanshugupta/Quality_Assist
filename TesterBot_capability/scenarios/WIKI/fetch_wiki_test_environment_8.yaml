@@ -1,0 +1,13 @@
+description:  Provides detailed information about the Golden Template Client (GTC) used in the S4HANA Cloud test landscape. It covers the purpose of the GTC, its scope and creation, usage of GTC copies across various environments, content update handling, change management procedures, and the responsibilities of stakeholders involved.
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

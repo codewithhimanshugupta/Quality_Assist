@@ -1,0 +1,13 @@
+description: Returns answers related to query on QATL - Test Case Design, Clean Transport - Link Collection, (OBSOLETE) Pilot Code PAL for ABAP in QATL, Quality on Transport Level Pilot Community Wiki, QATL - Mass Rollout in S/4, QAPS Piloting, QAPS - Usage Data, Clean Transports - Most Common Findings and Learnings, Quality Assurance @ Emergency Patch Level (QAEP)
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_quality_monitoring
+
+response_context:
+  - description: Response from wiki
+    value: response

@@ -1,0 +1,12 @@
+description: Returns answers related to query on Request for Integration, Coverage KPIs, Static Code Checks, STEP Configurations, External Test Tools, Dependency Management, Increment Validation, Dlab Systems, Demo Data, Setup , Country Enablement, Hotfix tests, Back Sync tests, Debt Collections Management
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_environment
+
+response_context:
+  - description: Response from wiki
+    value: response

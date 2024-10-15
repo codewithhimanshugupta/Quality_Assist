@@ -1,0 +1,13 @@
+description: Returns answers related to query on Coverage Exemption Tool (SCLS), How to handle failures along the pipeline, Error Analysis & Troubleshooting, Best Practices for Writing Robust Test Automates, Insufficient coverage at quality gates, Legacy Code Handling, Test Automation Contacts, Test Automation Robustness
+
+slots:
+  - name: userinput
+    description: complete input received from user in assistant
+  
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_automation
+
+response_context:
+  - description: Response from wiki
+    value: response

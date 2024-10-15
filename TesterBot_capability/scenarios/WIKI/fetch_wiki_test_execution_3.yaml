@@ -1,0 +1,13 @@
+description: Returns answers related to query on Incident Creation from ServiceNow, HCSM Configurable Workspace, Closing incidents in ServiceNow, Validating incidents in ServiceNow, Validating incidents in ServiceNow, Incident notification and response
+
+slots:
+- name: userinput
+  description: complete input received from user in assistant
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_test_execution
+
+response_context:
+- description: Response from wiki
+  value: response

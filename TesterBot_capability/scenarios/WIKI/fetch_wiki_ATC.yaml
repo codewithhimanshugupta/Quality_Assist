@@ -1,0 +1,13 @@
+description: Returns ATC related information, Type of test,ATC in S4HANA Public Cloud,Performance Analysis & Improvement Project for Static Code Checks Using ATC Framework,Working with ATC in FBE World,Switch2CI Landing Page,Switch2CI Roadmap,Switch2CI S4HANA Public Cloud
+
+slots:
+  - name: userinput
+    description: Entire user query
+
+target:
+  type: function
+  name: WIKI/fetch_wiki_ATC
+
+# response_context:
+#   - description: Response from wiki
+#     value: response
